@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * Representation of permutation natural some numbers.
@@ -11,6 +12,35 @@ public class Permutation {
      */
     public Permutation(int[] numbers) {
         this.numbers = numbers;
+    }
+
+    /**
+     * Constructor generates n-th permutation of sequence of (0, 1, ... , length - 1).
+     *
+     * @param length length of sequence of first natural numbers
+     * @param whichPermutation which lexicographically permutation is going to be generated
+     */
+    public Permutation(int length, long whichPermutation) {
+        numbers = new int[length];
+
+        ArrayList<Integer> possibleNumbers = new ArrayList<>();
+        for (int i = 0; i < length; i++)
+            possibleNumbers.add(i);
+
+        for (int i = 0; i < length; i++) {
+            int f = length - i - 1;
+
+            //gonna be optimized to log2(n)
+            int number = 0;
+            while ((number + 1) * Factorial.getFactorial(f) <= whichPermutation)
+                number++;
+
+            whichPermutation -= number * Factorial.getFactorial(f);
+
+            System.out.println(number);
+            numbers[i] = possibleNumbers.get(number);
+            possibleNumbers.remove(number);
+        }
     }
 
     /**

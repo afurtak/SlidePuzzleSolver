@@ -2,7 +2,7 @@
 /**
  * Permutation representation of slide puzzle.
  */
-public class SlidePuzzlePermutation {
+public class PermutationState {
 
     public static final short UP = 1;
     public static final short DOWN = 2;
@@ -17,7 +17,7 @@ public class SlidePuzzlePermutation {
      * @param x is width of slide puzzle
      * @param y is height of slide puzzle
      */
-    public SlidePuzzlePermutation(long permutation, int x, int y) {
+    public PermutationState(long permutation, int x, int y) {
         this.permutation = permutation;
         this.x = x;
         this.y = y;
@@ -26,26 +26,26 @@ public class SlidePuzzlePermutation {
     /**
      * Compute permutation based on given tabled representation of slide puzzle.
      *
-     * @param slidePuzzleTable tabled representation of slide puzzle.
+     * @param tableState tabled representation of slide puzzle.
      */
-    public SlidePuzzlePermutation(SlidePuzzleTable slidePuzzleTable) {
+    public PermutationState(TableState tableState) {
         permutation = 0;
-        x = slidePuzzleTable.getWidth();
-        y = slidePuzzleTable.getHeight();
+        x = tableState.getWidth();
+        y = tableState.getHeight();
 
-        Permutation perm = new Permutation(slidePuzzleTable.getTable());
+        Permutation perm = new Permutation(tableState.getTable());
         permutation = perm.whichPermutation();
     }
 
     /**
      * Copy constructor for SlidePuzzlePermutation class.
      *
-     * @param slidePuzzlePermutation is source which will be copied.
+     * @param permutationState is source which will be copied.
      */
-    public SlidePuzzlePermutation(SlidePuzzlePermutation slidePuzzlePermutation) {
-        x = slidePuzzlePermutation.getX();
-        y = slidePuzzlePermutation.getY();
-        permutation = slidePuzzlePermutation.permutation;
+    public PermutationState(PermutationState permutationState) {
+        x = permutationState.getX();
+        y = permutationState.getY();
+        permutation = permutationState.permutation;
     }
 
 

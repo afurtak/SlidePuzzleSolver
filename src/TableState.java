@@ -1,9 +1,8 @@
-import javax.sound.midi.SysexMessage;
 
 /**
  * Tabled permutation of slide puzzle.
  */
-public class SlidePuzzleTable {
+public class TableState {
 
 
     private int [] table;
@@ -16,7 +15,7 @@ public class SlidePuzzleTable {
      * @param width is width of slide puzzle
      * @param height is height of slide puzzle
      */
-    public SlidePuzzleTable(int width, int height) {
+    public TableState(int width, int height) {
         this.width = width;
         this.height = height;
         table = new int[width * height];
@@ -30,7 +29,7 @@ public class SlidePuzzleTable {
      * @param width
      * @param height
      */
-    public SlidePuzzleTable(int[] table, int width, int height) {
+    public TableState(int[] table, int width, int height) {
         this.width = width;
         this.height = height;
         this.table = new int[width * height];
@@ -42,22 +41,27 @@ public class SlidePuzzleTable {
      * Compute tabled representation of slide puzzle based on permutation
      * representation.
      *
-     * @param permutation permutation representation of slide puzzle.
+     * @param permutationState permutation representation of slide puzzle.
      */
-    public SlidePuzzleTable(SlidePuzzlePermutation permutation) {
+    public TableState(PermutationState permutationState) {
 
+        this.width = permutationState.getX();
+        this.height = permutationState.getY();
+
+        Permutation permutation = new Permutation(width * height, permutationState.getPermutation());
+        table = permutation.getNumbers();
     }
 
     /**
      * Copy constructor for SlidePuzzleTable class.
-     * @param slidePuzzleTable is source which will be copied.
+     * @param tableState is source which will be copied.
      */
-    public SlidePuzzleTable(SlidePuzzleTable slidePuzzleTable) {
-        width = slidePuzzleTable.getWidth();
-        height = slidePuzzleTable.getHeight();
+    public TableState(TableState tableState) {
+        width = tableState.getWidth();
+        height = tableState.getHeight();
 
         this.table = new int[width * height];
-        System.arraycopy(slidePuzzleTable.getTable(), 0, this.table, 0, width * height);
+        System.arraycopy(tableState.getTable(), 0, this.table, 0, width * height);
     }
 
     public int[] getTable() {
