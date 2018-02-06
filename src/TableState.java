@@ -25,9 +25,9 @@ public class TableState {
     }
 
     /**
-     * @param table
-     * @param width
-     * @param height
+     * @param table is a array, contains permutation of slide puzzle
+     * @param width is width of slide puzzle
+     * @param height is height of slide puzzle
      */
     public TableState(int[] table, int width, int height) {
         this.width = width;
