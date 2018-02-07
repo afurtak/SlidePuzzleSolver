@@ -1,6 +1,16 @@
 
 /**
- * Representation of single move of slide puzzle.
+ * Class represents single move of slide puzzle.
+ *
+ * Move means swap blank place with piece on UP\DOWN\RIGHT\LEFT from its.
+ *
+ * e.g.
+ *      0 1 2      1 0 2
+ *      3 4 5  ->  3 4 5
+ *      6 7 8      6 7 8
+ *
+ *      is move RIGHT.
+ *
  */
 public class SlidePuzzleMove {
 
@@ -9,38 +19,14 @@ public class SlidePuzzleMove {
     public static final short RIGHT = 3;
     public static final short LEFT = 4;
 
-    private int x, y;
     private short direction;
 
-    /**
-     * @param x - x coordinate of moved piece piece of slide puzzle.
-     * @param y - y coordinate of moved piece piece of slide puzzle.
-     * @param direction - direction of move of piece of slide puzzle.
-     */
-    public SlidePuzzleMove(int x, int y, short direction) {
-        this.x = x;
-        this.y = y;
+    public SlidePuzzleMove(short direction) {
         this.direction = direction;
     }
 
-    /**
-     * @return x coordinate of moved piece piece of slide puzzle.
-     */
-    public int getX() {
-        return x;
-    }
-
-    /**
-     * @return y coordinate of moved piece piece of slide puzzle.
-     */
-    public int getY() {
-        return y;
-    }
-
-    /**
-     * @return direction of move of piece of slide puzzle.
-     */
     public short getDirection() {
         return direction;
     }
+    
 }
