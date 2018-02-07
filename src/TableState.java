@@ -210,11 +210,12 @@ public class TableState {
     }
 
     /**
-     *
-     * @param x
-     * @param y
-     * @param value
-     * @throws Exception
+     * Sets value on given coordinates.
+     * 
+     * @param x - x coordinate of piece of slide puzzle.
+     * @param y - y coordinate of piece of slide puzzle.
+     * @param value new value of piece on given coordinate
+     * @throws Exception when given coordinates are not property.
      */
     private void setElement(int x, int y, int value) throws Exception {
         if (x >= width || y >= height)
