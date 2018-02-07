@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7b223b2-0672-4eea-b734-084c6d3cd4b0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/SlidePuzzleMove.java" afterPath="$PROJECT_DIR$/src/SlidePuzzleMove.java" />
-    </list>
+    <list default="true" id="b7b223b2-0672-4eea-b734-084c6d3cd4b0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -91,8 +89,8 @@
       <file leaf-file-name="SlidePuzzleMove.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+            <state relative-caret-position="162">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
               <folding>
                 <element signature="e#516#517#0" expanded="true" />
                 <element signature="e#558#559#0" expanded="true" />
@@ -671,8 +669,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+        <state relative-caret-position="162">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
           <folding>
             <element signature="e#516#517#0" expanded="true" />
             <element signature="e#558#559#0" expanded="true" />
