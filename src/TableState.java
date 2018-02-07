@@ -64,16 +64,49 @@ public class TableState {
         System.arraycopy(tableState.getTable(), 0, this.table, 0, width * height);
     }
 
-    public int[] getTable() {
-        return table;
+    /**
+     * @param move - SlidePuzzleMove object represents move which is checked.
+     * @return true if given move is possible, otherwise false.
+     */
+    public boolean isMovePossible(SlidePuzzleMove move) {
+
+        return true;
     }
 
-    public int getWidth() {
-        return width;
+    /**
+     *
+     * @param move
+     */
+    public void makeMove(SlidePuzzleMove move) throws Exception {
+
     }
 
-    public int getHeight() {
-        return height;
+    /**
+     *
+     * @return
+     */
+    public SlidePuzzleMove[] getPossibleMove() {
+        return new SlidePuzzleMove[1];
+    }
+
+    /**
+     *
+     * @return
+     */
+    public TableState getStateAfterMove() {
+        return this;
+    }
+
+    /**
+     * Prints state of slide puzzle.
+     */
+    public void print() throws Exception {
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                System.out.print(getElement(x, y) + " ");
+            }
+            System.out.println();
+        }
     }
 
     /**
@@ -87,6 +120,18 @@ public class TableState {
             throw new Exception("Not property coordinates! X or Y is too big.");
 
         return table[x * width + y];
+    }
+
+    public int[] getTable() {
+        return table;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public void setTable(int[] table) {
