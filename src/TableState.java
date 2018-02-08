@@ -116,9 +116,8 @@ public class TableState {
      * Method that make given move.
      *
      * @param move SlidePuzzleMove object which is to perform.
-     * @throws Exception if move is impossible to perform.
      */
-    public void makeMove(SlidePuzzleMove move) throws Exception {
+    public void makeMove(SlidePuzzleMove move) {
         int x, y;
         if (move.getDirection() == SlidePuzzleMove.UP) {
             x = zeroX;
@@ -137,9 +136,16 @@ public class TableState {
             y = zeroY;
         }
 
-        int value = getElement(x, y);
-        setElement(zeroX, zeroY, value);
-        setElement(x, y, 0);
+        try {
+            int value = getElement(x, y);
+            setElement(zeroX, zeroY, value);
+            setElement(x, y, 0);
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
+        zeroX = x;
+        zeroY = y;
     }
 
     /**
@@ -181,10 +187,15 @@ public class TableState {
     /**
      * Prints state of slide puzzle.
      */
-    public void print() throws Exception {
+    public void print() {
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
-                System.out.print(getElement(x, y) + " ");
+                try {
+                    System.out.print(getElement(x, y) + " ");
+                }
+                catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
             System.out.println();
         }
@@ -214,7 +225,7 @@ public class TableState {
      * @throws Exception if x or y are not property coordinates;
      */
     public int getElement(int x, int y) throws Exception {
-        if (x > width || y > height)
+        if (x >= width || y >= height)
             throw new Exception("Not property coordinates! X or Y is too big.");
         if (x < 0 || y < 0)
             throw new Exception("Not property coordinates! X or Y is negative.");

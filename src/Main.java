@@ -6,10 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Permutation permutation = new Permutation(9, 0);
+        Permutation permutation = new Permutation(6, 123);
 
-        PermutationState startState = new PermutationState(permutation.whichPermutation(), 4, 4);
-        startState.print();
+        PermutationState startState = new PermutationState(permutation.whichPermutation(), 2, 3);
+        /*startState.print();
 
         ArrayList<Pair<PermutationState, SlidePuzzleMove>> t = startState.getPossibleNextStates();
 
@@ -20,14 +20,19 @@ public class Main {
             System.out.println();
         }
 
-        
+
 
         System.out.println();
 
-        System.out.println(Factorial.getFactorial(16));
+        System.out.println(Factorial.getFactorial(16));*/
 
-        /*SlidePuzzleSolver solver = new SlidePuzzleSolver(startState);
-        solver.getSolution();*/
+        SlidePuzzleSolver solver = new SlidePuzzleSolver(startState);
+        solver.getSolution();
+        System.out.println();
+
+        startState.print();
+
+        solver.printSolution();
 
     }
 

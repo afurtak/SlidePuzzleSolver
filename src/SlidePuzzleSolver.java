@@ -1,6 +1,9 @@
+import javafx.scene.control.Tab;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Class services solutions for slide puzzle.
@@ -10,6 +13,8 @@ public class SlidePuzzleSolver {
     private PermutationState beginState;
 
     private ArrayList<SlidePuzzleMove> solution;
+
+    private HashSet<Long> visited;
 
     private boolean isSolved;
 
@@ -40,9 +45,9 @@ public class SlidePuzzleSolver {
         if (isSolved)
             return solution;
         else {
-            solve(beginState, new Pair<>(beginState, new SlidePuzzleMove(SlidePuzzleMove.LEFT)));
+            visited = new HashSet<>();
+            solve(new PermutationState(beginState), new SlidePuzzleMove(SlidePuzzleMove.LEFT));
             isSolved = true;
-            solution.remove(solution.size() - 1);
             return solution;
         }
     }
@@ -52,25 +57,55 @@ public class SlidePuzzleSolver {
      *
      * Uses DFS algorithm to search states graph looking for solution.
      */
-    private void solve(PermutationState currState, Pair<PermutationState, SlidePuzzleMove> prevState) {
+    private void solve(PermutationState currState, SlidePuzzleMove move) {
+        visited.add(currState.getPermutation());
 
-        if (!currState.isSolved()) {
+        if (currState.isSolved())
+            isSolved = true;
+
+        if (!isSolved) {
             ArrayList<Pair<PermutationState, SlidePuzzleMove>> nextStates = currState.getPossibleNextStates();
 
             for (Pair<PermutationState, SlidePuzzleMove> i : nextStates) {
 
-                if (!prevState.getKey().equals(i.getKey()))
-                    solve(i.getKey(), new Pair<>(currState, i.getValue()));
+                if (!visited.contains(i.getKey().getPermutation()))
+                    solve(i.getKey(), i.getValue());
 
+                if (isSolved)
+                    break;
             }
-        }
-        else {
-            isSolved = true;
         }
 
         if (isSolved) {
-            solution.add(prevState.getValue());
+            solution.add(move);
         }
+    }
+
+    public void printSolution() {
+        TableState state = new TableState(beginState);
+        for (int i = solution.size() - 2; i >= 0; i--) {
+
+            state.print();
+            state.makeMove(solution.get(i));
+            
+            System.out.println();
+
+            if (solution.get(i).getDirection() == SlidePuzzleMove.UP)
+                System.out.println("UP");
+
+            if (solution.get(i).getDirection() == SlidePuzzleMove.DOWN)
+                System.out.println("DOWN");
+
+            if (solution.get(i).getDirection() == SlidePuzzleMove.LEFT)
+                System.out.println("LEFT");
+
+            if (solution.get(i).getDirection() == SlidePuzzleMove.RIGHT)
+                System.out.println("RIGHT");
+
+            System.out.println();
+        }
+
+        state.print();
     }
 
 }
