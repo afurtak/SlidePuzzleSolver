@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 /**
  * Class services solutions for slide puzzle.
@@ -5,9 +6,8 @@
 public class SlidePuzzleSolver {
 
     private PermutationState beginState;
-    private PermutationState endState;
 
-    private SlidePuzzleMove[] solution;
+    private ArrayList<SlidePuzzleMove> solution;
 
     private boolean isSolved;
 
@@ -16,8 +16,8 @@ public class SlidePuzzleSolver {
      */
     public SlidePuzzleSolver(PermutationState permutationState) {
         beginState = new PermutationState(permutationState);
-        endState = new PermutationState(0, beginState.getX(), beginState.getY());
 
+        solution = new ArrayList<>();
         isSolved = false;
     }
 
@@ -26,19 +26,19 @@ public class SlidePuzzleSolver {
      */
     public SlidePuzzleSolver(TableState tableState) {
         beginState = new PermutationState(tableState);
-        endState = new PermutationState(0, beginState.getX(), beginState.getY());
 
+        solution = new ArrayList<>();
         isSolved = false;
     }
 
     /**
      * @return array of moves provide to solved slide puzzle.
      */
-    public SlidePuzzleMove[] getSolution() {
+    public ArrayList<SlidePuzzleMove> getSolution() {
         if (isSolved)
             return solution;
         else {
-            solve();
+            solve(beginState, beginState);
             isSolved = true;
             return solution;
         }
@@ -46,8 +46,27 @@ public class SlidePuzzleSolver {
 
     /**
      * Computes array of moves provide to solved slide puzzle.
+     *
+     * Uses DFS algorithm to search states graph looking for solution.
      */
-    private void solve() {
+    private void solve(PermutationState currState, PermutationState prevState) {
 
+        if (!currState.isSolved()) {
+            PermutationState[] nextStates = currState.getPossibleNextStates();
+
+            for (PermutationState i : nextStates) {
+                if (!prevState.equals(i)) {
+                    solve(i, currState);
+                }
+            }
+        }
+        else {
+            isSolved = true;
+        }
+
+        /*if (isSolved) {
+            solution.add();
+        }*/
     }
+
 }

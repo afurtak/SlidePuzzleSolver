@@ -48,6 +48,27 @@ public class PermutationState {
         permutation = permutationState.permutation;
     }
 
+    /**
+     * Returns an array contains all possible states such that, exist move provides to that state.
+     *
+     * @return array of possible current state's next states.
+     */
+    public PermutationState[] getPossibleNextStates() {
+        TableState tableState = new TableState(this);
+        TableState[] nextTableStates = tableState.getPossibleNextStates();
+
+        PermutationState[] nextPermutationStates = new PermutationState[nextTableStates.length];
+
+        for (int i = 0; i < nextPermutationStates.length;i++) {
+            nextPermutationStates[i] = new PermutationState(nextTableStates[i]);
+        }
+
+        return nextPermutationStates;
+    }
+
+    public boolean isSolved() {
+        return permutation == 0;
+    }
 
 
     public long getPermutation() {

@@ -211,7 +211,7 @@ public class TableState {
 
     /**
      * Sets value on given coordinates.
-     * 
+     *
      * @param x - x coordinate of piece of slide puzzle.
      * @param y - y coordinate of piece of slide puzzle.
      * @param value new value of piece on given coordinate
