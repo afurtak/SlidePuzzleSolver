@@ -1,3 +1,5 @@
+import javafx.util.Pair;
+
 import java.util.ArrayList;
 
 /**
@@ -38,8 +40,9 @@ public class SlidePuzzleSolver {
         if (isSolved)
             return solution;
         else {
-            solve(beginState, beginState);
+            solve(beginState, new Pair<>(beginState, new SlidePuzzleMove(SlidePuzzleMove.LEFT)));
             isSolved = true;
+            solution.remove(solution.size() - 1);
             return solution;
         }
     }
@@ -49,24 +52,25 @@ public class SlidePuzzleSolver {
      *
      * Uses DFS algorithm to search states graph looking for solution.
      */
-    private void solve(PermutationState currState, PermutationState prevState) {
+    private void solve(PermutationState currState, Pair<PermutationState, SlidePuzzleMove> prevState) {
 
         if (!currState.isSolved()) {
-            PermutationState[] nextStates = currState.getPossibleNextStates();
+            ArrayList<Pair<PermutationState, SlidePuzzleMove>> nextStates = currState.getPossibleNextStates();
 
-            for (PermutationState i : nextStates) {
-                if (!prevState.equals(i)) {
-                    solve(i, currState);
-                }
+            for (Pair<PermutationState, SlidePuzzleMove> i : nextStates) {
+
+                if (!prevState.getKey().equals(i.getKey()))
+                    solve(i.getKey(), new Pair<>(currState, i.getValue()));
+
             }
         }
         else {
             isSolved = true;
         }
 
-        /*if (isSolved) {
-            solution.add();
-        }*/
+        if (isSolved) {
+            solution.add(prevState.getValue());
+        }
     }
 
 }

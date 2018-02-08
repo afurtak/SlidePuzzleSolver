@@ -37,7 +37,6 @@ public class Permutation {
 
             whichPermutation -= number * Factorial.getFactorial(f);
 
-            System.out.println(number);
             numbers[i] = possibleNumbers.get(number);
             possibleNumbers.remove(number);
         }

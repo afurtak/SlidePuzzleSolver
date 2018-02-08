@@ -1,3 +1,7 @@
+import javafx.scene.control.Tab;
+import javafx.util.Pair;
+
+import java.util.ArrayList;
 
 /**
  * Permutation representation of slide puzzle.
@@ -53,17 +57,27 @@ public class PermutationState {
      *
      * @return array of possible current state's next states.
      */
-    public PermutationState[] getPossibleNextStates() {
+    public ArrayList<Pair<PermutationState, SlidePuzzleMove>> getPossibleNextStates() {
+
         TableState tableState = new TableState(this);
-        TableState[] nextTableStates = tableState.getPossibleNextStates();
+        ArrayList<Pair<TableState, SlidePuzzleMove>> nextTableSates = tableState.getPossibleNextStates();
+        ArrayList<Pair<PermutationState, SlidePuzzleMove>> result = new ArrayList<>();
 
-        PermutationState[] nextPermutationStates = new PermutationState[nextTableStates.length];
-
-        for (int i = 0; i < nextPermutationStates.length;i++) {
-            nextPermutationStates[i] = new PermutationState(nextTableStates[i]);
+        for (Pair<TableState, SlidePuzzleMove> i : nextTableSates) {
+            result.add(new Pair<>(new PermutationState(i.getKey()), i.getValue()));
         }
 
-        return nextPermutationStates;
+        return result;
+    }
+
+
+    public void print() {
+        try {
+            new TableState(this).print();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public boolean isSolved() {

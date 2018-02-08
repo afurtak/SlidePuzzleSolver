@@ -1,3 +1,7 @@
+import javafx.scene.control.Tab;
+import javafx.util.Pair;
+
+import java.util.ArrayList;
 
 /**
  * Tabled permutation of slide puzzle.
@@ -143,46 +147,23 @@ public class TableState {
      *
      * @return array of possible current state's next states.
      */
-    public TableState[] getPossibleNextStates() {
-        boolean[] isPossible = {false, false, false, false};
-        int counter = 0;
+    public ArrayList<Pair<TableState, SlidePuzzleMove>> getPossibleNextStates() {
+        short[] directions = {SlidePuzzleMove.UP, SlidePuzzleMove.DOWN, SlidePuzzleMove.RIGHT, SlidePuzzleMove.LEFT};
 
-        if (isMovePossible(new SlidePuzzleMove(SlidePuzzleMove.UP))) {
-            isPossible[0] = true;
-            counter++;
-        }
-        if (isMovePossible(new SlidePuzzleMove(SlidePuzzleMove.DOWN))) {
-            isPossible[1] = true;
-            counter++;
-        }
-        if (isMovePossible(new SlidePuzzleMove(SlidePuzzleMove.RIGHT))) {
-            isPossible[2] = true;
-            counter++;
-        }
-        if (isMovePossible(new SlidePuzzleMove(SlidePuzzleMove.LEFT))) {
-            isPossible[3] = true;
-            counter++;
-        }
+        ArrayList<Pair<TableState, SlidePuzzleMove>> result = new ArrayList<>();
 
-        TableState[] resultArray = new TableState[counter];
-
-        counter = 0;
-
-        for (int i = 0; i < 4; i++) {
-            if (isPossible[i]) {
-                resultArray[counter] = new TableState(this);
+        for (short direction : directions) {
+            if (isMovePossible(new SlidePuzzleMove(direction))) {
                 try {
-                    resultArray[counter].makeMove(new SlidePuzzleMove(SlidePuzzleMove.UP));
+                    result.add(new Pair<>(getStateAfterMove(new SlidePuzzleMove(direction)), new SlidePuzzleMove(direction)));
                 }
                 catch (Exception e) {
                     e.printStackTrace();
                 }
-
-                counter++;
             }
         }
 
-        return resultArray;
+        return result;
     }
 
     /**
