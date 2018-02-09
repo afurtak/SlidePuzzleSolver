@@ -1,9 +1,10 @@
 import javafx.scene.control.Tab;
 import javafx.util.Pair;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.AbstractQueue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * Class services solutions for slide puzzle.
@@ -46,7 +47,7 @@ public class SlidePuzzleSolver {
             return solution;
         else {
             visited = new HashSet<>();
-            solve(new PermutationState(beginState), new SlidePuzzleMove(SlidePuzzleMove.LEFT));
+            solve();
             isSolved = true;
             return solution;
         }
@@ -55,29 +56,47 @@ public class SlidePuzzleSolver {
     /**
      * Computes array of moves provide to solved slide puzzle.
      *
-     * Uses DFS algorithm to search states graph looking for solution.
+     * Uses A* algorithm to find solution.
      */
-    private void solve(PermutationState currState, SlidePuzzleMove move) {
-        visited.add(currState.getPermutation());
+    private void solve() {
+        Queue<PermutationState> Q = new PriorityQueue<>(new Comparator<PermutationState>() {
+            @Override
+            public int compare(PermutationState left, PermutationState right) {
+                return Integer.compare(left.getRating(), right.getRating());
+            }
+        });
 
-        if (currState.isSolved())
-            isSolved = true;
+        beginState.setPrevState(null);
+        beginState.setDistanceFromRoot(0);
 
-        if (!isSolved) {
+        Q.add(beginState);
+
+        PermutationState currState;
+        while ((currState = Q.poll()) != null) {
+
+            System.out.println(currState.getDistanceFromRoot());
+
+            if (currState.isSolved()) {
+                //TODO find path to the solved state.
+                System.out.println();
+                while (currState != null) {
+                    currState.print();
+                    System.out.println();
+                    currState = currState.getPrevState();
+                }
+                break;
+            }
+
             ArrayList<Pair<PermutationState, SlidePuzzleMove>> nextStates = currState.getPossibleNextStates();
 
             for (Pair<PermutationState, SlidePuzzleMove> i : nextStates) {
-
-                if (!visited.contains(i.getKey().getPermutation()))
-                    solve(i.getKey(), i.getValue());
-
-                if (isSolved)
-                    break;
+                if (i.getKey().getPermutation() != currState.getPermutation()) {
+                    i.getKey().setDistanceFromRoot(currState.getDistanceFromRoot() + 1);
+                    i.getKey().setPrevState(currState);
+                    Q.add(i.getKey());
+                }
             }
-        }
 
-        if (isSolved) {
-            solution.add(move);
         }
     }
 

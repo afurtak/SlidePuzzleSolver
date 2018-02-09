@@ -2,19 +2,20 @@ import javafx.scene.control.Tab;
 import javafx.util.Pair;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 /**
  * Permutation representation of slide puzzle.
  */
 public class PermutationState {
 
-    public static final short UP = 1;
-    public static final short DOWN = 2;
-    public static final short RIGHT = 3;
-    public static final short LEFT = 4;
-
     private long permutation;
     private int x, y;
+
+    private int distanceFromRoot;
+    private int rating;
+
+    private PermutationState prevState;
 
     /**
      * @param permutation is permutation
@@ -22,6 +23,7 @@ public class PermutationState {
      * @param y is height of slide puzzle
      */
     public PermutationState(long permutation, int x, int y) {
+        rating = -1;
         this.permutation = permutation;
         this.x = x;
         this.y = y;
@@ -37,6 +39,7 @@ public class PermutationState {
         x = tableState.getWidth();
         y = tableState.getHeight();
 
+        rating = -1;
         Permutation perm = new Permutation(tableState.getTable());
         permutation = perm.whichPermutation();
     }
@@ -50,6 +53,7 @@ public class PermutationState {
         x = permutationState.getX();
         y = permutationState.getY();
         permutation = permutationState.permutation;
+        rating = -1;
     }
 
     /**
@@ -70,24 +74,26 @@ public class PermutationState {
         return result;
     }
 
+    /**
+     * Method that returns approximately distance to solved state in moves.
+     * The value is computed by TableState class.
+     *
+     * @return Integer approximate number of moves required to solve slide puzzle
+     */
     public int rateState() {
         return new TableState(this).rateState();
     }
 
-
+    /**
+     * Prints state of slide puzzle.
+     */
     public void print() {
-        try {
-            new TableState(this).print();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
+        new TableState(this).print();
     }
 
     public boolean isSolved() {
         return permutation == 0;
     }
-
 
     public long getPermutation() {
         return permutation;
@@ -100,4 +106,24 @@ public class PermutationState {
     public int getY() {
         return y;
     }
+
+    public int getDistanceFromRoot() {
+        return distanceFromRoot;
+    }
+
+    public void setDistanceFromRoot(int distanceFromRoot) {
+        this.distanceFromRoot = distanceFromRoot;
+    }
+
+    public int getRating() {
+        if (rating == -1)
+            rating = rateState() + getDistanceFromRoot() + 1;
+        return rating;
+    }
+
+    public void setPrevState(PermutationState prevState) {
+        this.prevState = prevState;
+    }
+
+    public PermutationState getPrevState() { return prevState; }
 }

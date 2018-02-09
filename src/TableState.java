@@ -234,12 +234,21 @@ public class TableState {
     }
 
     /**
-     * Approximately method rates how far is that state from solved state
+     * Heuristic method that returns approximately distance to solved state in moves.
+     * The value is sum of distance each piece of slide puzzle from its correct place.
      *
      * @return Integer approximate number of moves required to solve slide puzzle
      */
     public int rateState() {
-        return 0;
+        int result = 0;
+
+        for (int i = 0; i < table.length; i++) {
+            int x1 = i % width, y1 = i / width;
+            int x2 = table[i] % width, y2 = table[i] / width;
+
+            result += (Math.abs(x1 - x2) + Math.abs(y1 - y2));
+        }
+        return result;
     }
 
     public int[] getTable() {
