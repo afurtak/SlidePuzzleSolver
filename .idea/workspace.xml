@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7b223b2-0672-4eea-b734-084c6d3cd4b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Factorial.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Factorial.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Main.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Permutation.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Permutation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/PermutationState.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/PermutationState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/SlidePuzzleMove.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/SlidePuzzleMove.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/SlidePuzzleSolver.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/SlidePuzzleSolver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/TableState.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/TableState.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Permutation.java" afterPath="$PROJECT_DIR$/src/Permutation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PermutationState.java" afterPath="$PROJECT_DIR$/src/PermutationState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SlidePuzzleMove.java" afterPath="$PROJECT_DIR$/src/SlidePuzzleMove.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SlidePuzzleSolver.java" afterPath="$PROJECT_DIR$/src/SlidePuzzleSolver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TableState.java" afterPath="$PROJECT_DIR$/src/TableState.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -29,8 +19,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="204">
+              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,35 +31,37 @@
       <file leaf-file-name="Permutation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Permutation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="69" column="35" lean-forward="false" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+            <state relative-caret-position="435">
+              <caret line="131" column="22" lean-forward="false" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PermutationState.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PermutationState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="117" column="19" lean-forward="false" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
+            <state relative-caret-position="267">
+              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#PermutationState#0;class#PermutationState#0" expanded="false" />
                 <element signature="method#PermutationState#1;class#PermutationState#0" expanded="false" />
                 <element signature="method#PermutationState#2;class#PermutationState#0" expanded="false" />
                 <element signature="method#getPossibleNextStates#0;class#PermutationState#0" expanded="false" />
+                <element signature="e#2678#2679#0" expanded="true" />
+                <element signature="e#2734#2735#0" expanded="true" />
                 <element signature="method#getRating#0;class#PermutationState#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TableState.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TableState.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/TableState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="236" column="85" lean-forward="false" selection-start-line="236" selection-start-column="85" selection-end-line="236" selection-end-column="85" />
+            <state relative-caret-position="317">
+              <caret line="258" column="64" lean-forward="false" selection-start-line="258" selection-start-column="64" selection-end-line="258" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TableState#0;class#TableState#0" expanded="false" />
@@ -157,12 +149,12 @@
         <option value="$PROJECT_DIR$/src/Factorial.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzlePermutation.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzleTable.java" />
-        <option value="$PROJECT_DIR$/src/Permutation.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzleMove.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/TableState.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzleSolver.java" />
+        <option value="$PROJECT_DIR$/src/Permutation.java" />
         <option value="$PROJECT_DIR$/src/PermutationState.java" />
+        <option value="$PROJECT_DIR$/src/TableState.java" />
       </list>
     </option>
   </component>
@@ -453,6 +445,8 @@
             <element signature="method#PermutationState#1;class#PermutationState#0" expanded="false" />
             <element signature="method#PermutationState#2;class#PermutationState#0" expanded="false" />
             <element signature="method#getPossibleNextStates#0;class#PermutationState#0" expanded="false" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
             <element signature="method#getRating#0;class#PermutationState#0" expanded="false" />
           </folding>
         </state>
@@ -541,6 +535,8 @@
             <element signature="method#PermutationState#1;class#PermutationState#0" expanded="false" />
             <element signature="method#PermutationState#2;class#PermutationState#0" expanded="false" />
             <element signature="method#getPossibleNextStates#0;class#PermutationState#0" expanded="false" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
             <element signature="method#getRating#0;class#PermutationState#0" expanded="false" />
           </folding>
         </state>
@@ -629,6 +625,8 @@
             <element signature="method#PermutationState#1;class#PermutationState#0" expanded="false" />
             <element signature="method#PermutationState#2;class#PermutationState#0" expanded="false" />
             <element signature="method#getPossibleNextStates#0;class#PermutationState#0" expanded="false" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
             <element signature="method#getRating#0;class#PermutationState#0" expanded="false" />
           </folding>
         </state>
@@ -883,42 +881,14 @@
             <element signature="method#PermutationState#1;class#PermutationState#0" expanded="false" />
             <element signature="method#PermutationState#2;class#PermutationState#0" expanded="false" />
             <element signature="method#getPossibleNextStates#0;class#PermutationState#0" expanded="false" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
             <element signature="method#getRating#0;class#PermutationState#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/Permutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="69" column="35" lean-forward="false" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TableState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="236" column="85" lean-forward="false" selection-start-line="236" selection-start-column="85" selection-end-line="236" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TableState#0;class#TableState#0" expanded="false" />
-            <element signature="method#TableState#1;class#TableState#0" expanded="false" />
-            <element signature="method#TableState#2;class#TableState#0" expanded="false" />
-            <element signature="method#TableState#3;class#TableState#0" expanded="false" />
-            <element signature="method#isMovePossible#0;class#TableState#0" expanded="false" />
-            <element signature="method#makeMove#0;class#TableState#0" expanded="false" />
-            <element signature="method#getPossibleNextStates#0;class#TableState#0" expanded="false" />
-            <element signature="method#getStateAfterMove#0;class#TableState#0" expanded="false" />
-            <element signature="method#print#0;class#TableState#0" expanded="false" />
-            <element signature="method#setElement#0;class#TableState#0" expanded="false" />
-            <element signature="method#getElement#0;class#TableState#0" expanded="false" />
-            <element signature="method#rateState#0;class#TableState#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SlidePuzzleSolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -954,25 +924,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Permutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="131" column="22" lean-forward="false" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="117" column="19" lean-forward="false" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
+        <state relative-caret-position="267">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#PermutationState#0;class#PermutationState#0" expanded="false" />
             <element signature="method#PermutationState#1;class#PermutationState#0" expanded="false" />
             <element signature="method#PermutationState#2;class#PermutationState#0" expanded="false" />
             <element signature="method#getPossibleNextStates#0;class#PermutationState#0" expanded="false" />
+            <element signature="e#2678#2679#0" expanded="true" />
+            <element signature="e#2734#2735#0" expanded="true" />
             <element signature="method#getRating#0;class#PermutationState#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TableState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="258" column="64" lean-forward="false" selection-start-line="258" selection-start-column="64" selection-end-line="258" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TableState#0;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#1;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#2;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#3;class#TableState#0" expanded="false" />
+            <element signature="method#isMovePossible#0;class#TableState#0" expanded="false" />
+            <element signature="method#makeMove#0;class#TableState#0" expanded="false" />
+            <element signature="method#getPossibleNextStates#0;class#TableState#0" expanded="false" />
+            <element signature="method#getStateAfterMove#0;class#TableState#0" expanded="false" />
+            <element signature="method#print#0;class#TableState#0" expanded="false" />
+            <element signature="method#setElement#0;class#TableState#0" expanded="false" />
+            <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+            <element signature="method#rateState#0;class#TableState#0" expanded="false" />
           </folding>
         </state>
       </provider>

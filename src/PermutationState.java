@@ -91,6 +91,10 @@ public class PermutationState {
         new TableState(this).print();
     }
 
+    public boolean isSolvable() {
+        return new TableState(this).isSolvable();
+    }
+
     public boolean isSolved() {
         return permutation == 0;
     }

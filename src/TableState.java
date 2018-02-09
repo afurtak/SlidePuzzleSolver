@@ -251,6 +251,31 @@ public class TableState {
         return result;
     }
 
+    /**
+     * Counts number of inversions of current permutation of puzzle.
+     * if size of puzzle is odd then,
+     *      number of inversions must be odd.
+     * otherwise,
+     *      it depense on parity of row number in which is zero.
+     *
+     * @return true if slide puzzle is solvable, otherwise false.
+     */
+    public boolean isSolvable() {
+
+        int numberInverion = new Permutation(table).getNumberInversion();
+
+        if (width % 2 == 1) {
+            return numberInverion % 2 == 0;
+        }
+        else {
+            if (zeroY % 2 == 0)
+                return numberInverion % 2 == 0;
+            else
+                return numberInverion % 2 == 1;
+        }
+
+    }
+
     public int[] getTable() {
         return table;
     }

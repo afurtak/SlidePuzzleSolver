@@ -119,8 +119,17 @@ public class Permutation {
         return numbers;
     }
 
-    int getNumber(int n) {
+    public int getNumber(int n) {
         return numbers[n];
+    }
+
+    public int getNumberInversion() {
+        int result = 0;
+        for (int i = 0; i < numbers.length; i++)
+            for (int j = i + 1; j < numbers.length; j++)
+                if (numbers[i] > numbers[j])
+                    result++;
+        return result;
     }
 
 }
