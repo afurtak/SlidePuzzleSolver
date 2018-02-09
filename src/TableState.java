@@ -233,6 +233,15 @@ public class TableState {
         return table[y * width + x];
     }
 
+    /**
+     * Approximately method rates how far is that state from solved state
+     *
+     * @return Integer approximate number of moves required to solve slide puzzle
+     */
+    public int rateState() {
+        return 0;
+    }
+
     public int[] getTable() {
         return table;
     }

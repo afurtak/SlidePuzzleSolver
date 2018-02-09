@@ -70,6 +70,10 @@ public class PermutationState {
         return result;
     }
 
+    public int rateState() {
+        return new TableState(this).rateState();
+    }
+
 
     public void print() {
         try {
