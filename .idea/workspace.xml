@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7b223b2-0672-4eea-b734-084c6d3cd4b0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Permutation.java" afterPath="$PROJECT_DIR$/src/Permutation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PermutationState.java" afterPath="$PROJECT_DIR$/src/PermutationState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TableState.java" afterPath="$PROJECT_DIR$/src/TableState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="23" />
+            <state relative-caret-position="225">
+              <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TableState.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TableState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TableState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="258" column="64" lean-forward="false" selection-start-line="258" selection-start-column="64" selection-end-line="258" selection-end-column="64" />
+            <state relative-caret-position="254">
+              <caret line="270" column="31" lean-forward="true" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TableState#0;class#TableState#0" expanded="false" />
@@ -150,11 +148,11 @@
         <option value="$PROJECT_DIR$/src/SlidePuzzlePermutation.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzleTable.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzleMove.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzleSolver.java" />
         <option value="$PROJECT_DIR$/src/Permutation.java" />
         <option value="$PROJECT_DIR$/src/PermutationState.java" />
         <option value="$PROJECT_DIR$/src/TableState.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -922,16 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Permutation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -959,8 +947,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TableState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="258" column="64" lean-forward="false" selection-start-line="258" selection-start-column="64" selection-end-line="258" selection-end-column="64" />
+        <state relative-caret-position="254">
+          <caret line="270" column="31" lean-forward="true" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#TableState#0;class#TableState#0" expanded="false" />
@@ -975,6 +963,16 @@
             <element signature="method#setElement#0;class#TableState#0" expanded="false" />
             <element signature="method#getElement#0;class#TableState#0" expanded="false" />
             <element signature="method#rateState#0;class#TableState#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -10,13 +10,15 @@ public class Main {
     public static void main(String[] args) {
 
         int[] perm = {1, 5, 2, 3, 4, 0, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-        Permutation permutation = new Permutation(perm);
+        Permutation permutation = new Permutation(9, 34634);
 
-        PermutationState startState = new PermutationState(permutation.whichPermutation(), 4, 4);
+        PermutationState startState = new PermutationState(permutation.whichPermutation(), 3, 3);
 
-        SlidePuzzleSolver solver = new SlidePuzzleSolver(startState);
-        solver.getSolution();
-        System.out.println();
+        if (startState.isSolvable()) {
+            SlidePuzzleSolver solver = new SlidePuzzleSolver(startState);
+            solver.getSolution();
+            System.out.println();
+        }
 
         //solver.printSolution();
 
