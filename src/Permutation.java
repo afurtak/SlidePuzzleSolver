@@ -32,7 +32,7 @@ public class Permutation {
 
             //gonna be optimized to log2(n)
             int number = 0;
-            while ((number + 1) * Factorial.getFactorial(f) <= whichPermutation)
+            while ((long)(number + 1) * Factorial.getFactorial(f) <= whichPermutation)
                 number++;
 
             whichPermutation -= number * Factorial.getFactorial(f);

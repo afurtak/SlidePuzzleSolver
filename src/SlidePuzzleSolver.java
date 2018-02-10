@@ -12,11 +12,7 @@ import java.util.concurrent.BlockingQueue;
 public class SlidePuzzleSolver {
 
     private PermutationState beginState;
-
     private ArrayList<SlidePuzzleMove> solution;
-
-    private HashSet<Long> visited;
-
     private boolean isSolved;
 
     /**
@@ -46,7 +42,6 @@ public class SlidePuzzleSolver {
         if (isSolved)
             return solution;
         else {
-            visited = new HashSet<>();
             solve();
             isSolved = true;
             return solution;
@@ -59,6 +54,7 @@ public class SlidePuzzleSolver {
      * Uses A* algorithm to find solution.
      */
     private void solve() {
+        HashSet<Long> visited = new HashSet<>();
         Queue<PermutationState> Q = new PriorityQueue<>(new Comparator<PermutationState>() {
             @Override
             public int compare(PermutationState left, PermutationState right) {
@@ -74,8 +70,7 @@ public class SlidePuzzleSolver {
         PermutationState currState;
         while ((currState = Q.poll()) != null) {
 
-            System.out.println(currState.getDistanceFromRoot());
-
+            visited.add(currState.getPermutation());
             if (currState.isSolved()) {
                 //TODO find path to the solved state.
                 System.out.println();
@@ -90,9 +85,12 @@ public class SlidePuzzleSolver {
             ArrayList<Pair<PermutationState, SlidePuzzleMove>> nextStates = currState.getPossibleNextStates();
 
             for (Pair<PermutationState, SlidePuzzleMove> i : nextStates) {
-                if (i.getKey().getPermutation() != currState.getPermutation()) {
+                if (i.getKey().getPermutation() != currState.getPermutation() && !visited.contains(i.getKey().getPermutation())) {
+
+
                     i.getKey().setDistanceFromRoot(currState.getDistanceFromRoot() + 1);
                     i.getKey().setPrevState(currState);
+
                     Q.add(i.getKey());
                 }
             }
