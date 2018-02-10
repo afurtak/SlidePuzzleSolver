@@ -1,9 +1,10 @@
 import javafx.scene.control.Tab;
 import javafx.util.Pair;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
+import java.util.AbstractQueue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
 
 /**
  * Class services solutions for slide puzzle.
@@ -12,11 +13,10 @@ public class SlidePuzzleSolver {
 
     private PermutationState beginState;
 
-    private ArrayList<SlidePuzzleMove> solution;
-
-    private HashSet<Long> visited;
-
     private boolean isSolved;
+
+    private ArrayList<SlidePuzzleMove> solution;
+    private HashSet<Long> path;
 
     /**
      * @param permutationState start state of slide puzzle as permutation representation of state.
@@ -40,50 +40,118 @@ public class SlidePuzzleSolver {
 
     /**
      * @return array of moves provide to solved slide puzzle.
+     *
+     * @throws Exception when given puzzle is not solvable.
      */
-    public ArrayList<SlidePuzzleMove> getSolution() {
+    public ArrayList<SlidePuzzleMove> getSolution() throws Exception {
         if (isSolved)
             return solution;
         else {
-            visited = new HashSet<>();
-            solve(new PermutationState(beginState), new SlidePuzzleMove(SlidePuzzleMove.LEFT));
-            isSolved = true;
+            solve();
             return solution;
         }
     }
 
     /**
      * Computes array of moves provide to solved slide puzzle.
+     * Uses IDA* algorithm to find solution.
      *
-     * Uses DFS algorithm to search states graph looking for solution.
+     * @throws Exception when given puzzle is not solvable.
      */
-    private void solve(PermutationState currState, SlidePuzzleMove move) {
-        visited.add(currState.getPermutation());
+    private void solve() throws Exception {
 
-        if (currState.isSolved())
-            isSolved = true;
+        if (beginState.isSolvable()) {
+            int threshold = 1;
 
-        if (!isSolved) {
-            ArrayList<Pair<PermutationState, SlidePuzzleMove>> nextStates = currState.getPossibleNextStates();
-
-            for (Pair<PermutationState, SlidePuzzleMove> i : nextStates) {
-
-                if (!visited.contains(i.getKey().getPermutation()))
-                    solve(i.getKey(), i.getValue());
-
-                if (isSolved)
-                    break;
+            while (!isSolved) {
+                System.out.println(threshold);
+                solution.clear();
+                path = new HashSet<>();
+                threshold = search(beginState, 0, threshold);
             }
-        }
 
-        if (isSolved) {
-            solution.add(move);
+            path.clear();
+        }
+        else {
+            throw new Exception("This puzzle is not solvable");
         }
     }
 
+    /**
+     * Limited depth first search.
+     *
+     * @param state - searching begin state - PermutationState's class object
+     * @param distanceFromRoot - current distance form begin state.
+     * @param threshold - limit to searching.
+     *
+     * @return minimum of all ‘f’(rating of state, approximately computed cost
+     *         to reach solved puzzle visiting current state),
+     *         greater than threshold encountered.
+     */
+    private int search(PermutationState state, int distanceFromRoot, int threshold) {
+        path.add(state.getPermutation());
+
+        if (state.isSolved()) {
+            state.print();
+            isSolved = true;
+            path.remove(state.getPermutation());
+            return distanceFromRoot;
+        }
+
+        state.setDistanceFromRoot(distanceFromRoot);
+        int f = state.getRating();
+        if (f > threshold) {
+            path.remove(state.getPermutation());
+            return f;
+        }
+
+        ArrayList<Pair<PermutationState, SlidePuzzleMove>> successors = state.getPossibleNextStates();
+
+        int min = 1000000000;
+
+        for (Pair<PermutationState, SlidePuzzleMove> succ : successors) {
+            if (!path.contains(succ.getKey().getPermutation())) {
+                solution.add(succ.getValue());
+
+                int temp = search(succ.getKey(), state.getDistanceFromRoot() + 1, threshold);
+
+                if (isSolved) {
+                    path.remove(state.getPermutation());
+                    return min;
+                }
+                if (temp < min)
+                    min = temp;
+
+                solution.remove(solution.size() - 1);
+            }
+        }
+
+        path.remove(state.getPermutation());
+        return min;
+    }
+
+    /**
+     * Method that prints solution:
+     *      beginState ==(move of "zero" tile)==> next state ===...==> ==(move of "zero" tile")==> solved puzzle
+     *
+     *      STATE
+     *
+     *      LEFT/RIGHT/TOP/DOWN
+     *
+     *      STATE
+     *
+     *      LEFT/RIGHT/TOP/DOWN
+     *
+     *      STATE
+     *         .
+     *         .
+     *         .
+     *
+     *      and go on.
+     */
     public void printSolution() {
         TableState state = new TableState(beginState);
-        for (int i = solution.size() - 2; i >= 0; i--) {
+        for (int i = 0; i < solution.size(); i++) {
 
             state.print();
             state.makeMove(solution.get(i));

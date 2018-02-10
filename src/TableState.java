@@ -234,12 +234,48 @@ public class TableState {
     }
 
     /**
-     * Approximately method rates how far is that state from solved state
+     * Heuristic method that returns approximately distance to solved state in moves.
+     * The value is sum of distance each piece of slide puzzle from its correct place.
      *
      * @return Integer approximate number of moves required to solve slide puzzle
      */
     public int rateState() {
-        return 0;
+        int result = 0;
+
+        for (int i = 0; i < table.length; i++) {
+            int x1 = i % width, y1 = i / width;
+            int x2 = table[i] % width, y2 = table[i] / width;
+
+            result += (Math.abs(x1 - x2) + Math.abs(y1 - y2));
+        }
+        return result;
+    }
+
+    /**
+     * Counts number of inversions of current permutation of puzzle.
+     * if size of puzzle is odd then,
+     *      number of inversions must be odd.
+     * otherwise,
+     *      it depense on parity of row number in which is zero.
+     *
+     * @return true if slide puzzle is solvable, otherwise false.
+     */
+    public boolean isSolvable() {
+
+        int numberInversion = new Permutation(table).getNumberInversion();
+
+        numberInversion -= zeroX + zeroY * width;
+
+        if (width % 2 == 1) {
+            return numberInversion % 2 == 0;
+        }
+        else {
+            if (zeroY % 2 == 0)
+                return numberInversion % 2 == 0;
+            else
+                return numberInversion % 2 == 1;
+        }
+
     }
 
     public int[] getTable() {

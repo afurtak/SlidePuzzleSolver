@@ -1,39 +1,36 @@
 import javafx.util.Pair;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.Queue;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Permutation permutation = new Permutation(6, 123);
+        int[] perm = {1, 5, 2, 3, 4, 0, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
 
-        PermutationState startState = new PermutationState(permutation.whichPermutation(), 2, 3);
-        /*startState.print();
+        /*
+         1  5  2  3
+         4  0  6  7
+         8  9 10 11
+        12 13 14 15
+         */
+        Permutation permutation = new Permutation(9, 96545);
 
-        ArrayList<Pair<PermutationState, SlidePuzzleMove>> t = startState.getPossibleNextStates();
+        PermutationState startState = new PermutationState(permutation.whichPermutation(), 3, 3);
 
-        System.out.println();
-
-        for (Pair<PermutationState, SlidePuzzleMove> i : t) {
-            i.getKey().print();
+        try {
+            SlidePuzzleSolver solver = new SlidePuzzleSolver(startState);
+            solver.getSolution();
             System.out.println();
+            solver.printSolution();
         }
-
-
-
-        System.out.println();
-
-        System.out.println(Factorial.getFactorial(16));*/
-
-        SlidePuzzleSolver solver = new SlidePuzzleSolver(startState);
-        solver.getSolution();
-        System.out.println();
-
-        startState.print();
-
-        solver.printSolution();
-
+        catch (Exception e) {
+            System.out.println("given puzzle is not solvable");
+        }
+        
     }
 
 }

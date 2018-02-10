@@ -32,7 +32,7 @@ public class Permutation {
 
             //gonna be optimized to log2(n)
             int number = 0;
-            while ((number + 1) * Factorial.getFactorial(f) <= whichPermutation)
+            while ((long)(number + 1) * Factorial.getFactorial(f) <= whichPermutation)
                 number++;
 
             whichPermutation -= number * Factorial.getFactorial(f);
@@ -119,8 +119,17 @@ public class Permutation {
         return numbers;
     }
 
-    int getNumber(int n) {
+    public int getNumber(int n) {
         return numbers[n];
+    }
+
+    public int getNumberInversion() {
+        int result = 0;
+        for (int i = 0; i < numbers.length; i++)
+            for (int j = i + 1; j < numbers.length; j++)
+                if (numbers[i] > numbers[j])
+                    result++;
+        return result;
     }
 
 }

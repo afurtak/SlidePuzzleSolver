@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7b223b2-0672-4eea-b734-084c6d3cd4b0" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Main.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Permutation.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/Permutation.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/PermutationState.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/PermutationState.class" />
@@ -9,6 +10,13 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/SlidePuzzleSolver.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/SlidePuzzleSolver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/TableState.class" afterPath="$PROJECT_DIR$/out/production/SlidePuzzleSolver/TableState.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PermutationState.java" afterPath="$PROJECT_DIR$/src/PermutationState.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SlidePuzzleSolver.java" afterPath="$PROJECT_DIR$/src/SlidePuzzleSolver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/TableState.java" afterPath="$PROJECT_DIR$/src/TableState.java" />
+>>>>>>> approximatelyFindingSolution
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +28,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="71">
               <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="56" />
+=======
+            <state relative-caret-position="672">
+              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+>>>>>>> approximatelyFindingSolution
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,8 +48,13 @@
       <file leaf-file-name="Permutation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Permutation.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="-989">
               <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+=======
+            <state relative-caret-position="-1084">
+              <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+>>>>>>> approximatelyFindingSolution
               <folding />
             </state>
           </provider>
@@ -45,12 +63,18 @@
       <file leaf-file-name="PermutationState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="512">
               <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1518203342159" expanded="true" signature="2669:2671" ph="{...}" />
               </folding>
+=======
+            <state relative-caret-position="1189">
+              <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+              <folding />
+>>>>>>> approximatelyFindingSolution
             </state>
           </provider>
         </entry>
@@ -58,8 +82,13 @@
       <file leaf-file-name="TableState.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TableState.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="680">
               <caret line="255" column="0" lean-forward="true" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
+=======
+            <state relative-caret-position="-134">
+              <caret line="266" column="49" lean-forward="false" selection-start-line="266" selection-start-column="49" selection-end-line="266" selection-end-column="49" />
+>>>>>>> approximatelyFindingSolution
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#TableState#0;class#TableState#0" expanded="false" />
@@ -73,9 +102,13 @@
                 <element signature="method#print#0;class#TableState#0" expanded="false" />
                 <element signature="method#setElement#0;class#TableState#0" expanded="false" />
                 <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+<<<<<<< HEAD
                 <element signature="e#7193#7194#0" expanded="true" />
                 <element signature="e#7217#7218#0" expanded="true" />
                 <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+=======
+                <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
               </folding>
             </state>
           </provider>
@@ -84,12 +117,20 @@
       <file leaf-file-name="SlidePuzzleSolver.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SlidePuzzleSolver.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="722">
               <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#printSolution#0;class#SlidePuzzleSolver#0" expanded="false" />
                 <marker date="1518203342165" expanded="false" signature="2208:2224" ph="{...}" />
+=======
+            <state relative-caret-position="286">
+              <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
+>>>>>>> approximatelyFindingSolution
               </folding>
             </state>
           </provider>
@@ -98,8 +139,13 @@
       <file leaf-file-name="SlidePuzzleMove.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="567">
               <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+=======
+            <state relative-caret-position="798">
+              <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+>>>>>>> approximatelyFindingSolution
               <folding />
             </state>
           </provider>
@@ -146,9 +192,15 @@
         <option value="$PROJECT_DIR$/src/SlidePuzzleTable.java" />
         <option value="$PROJECT_DIR$/src/SlidePuzzleMove.java" />
         <option value="$PROJECT_DIR$/src/Permutation.java" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/SlidePuzzleSolver.java" />
         <option value="$PROJECT_DIR$/src/PermutationState.java" />
         <option value="$PROJECT_DIR$/src/TableState.java" />
+=======
+        <option value="$PROJECT_DIR$/src/TableState.java" />
+        <option value="$PROJECT_DIR$/src/PermutationState.java" />
+        <option value="$PROJECT_DIR$/src/SlidePuzzleSolver.java" />
+>>>>>>> approximatelyFindingSolution
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -196,7 +248,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+>>>>>>> approximatelyFindingSolution
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,9 +271,13 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
       <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
+=======
+      <pane id="Scratches" />
+>>>>>>> approximatelyFindingSolution
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -365,17 +427,22 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+=======
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24944812" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+>>>>>>> approximatelyFindingSolution
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.058854166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15677084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -387,7 +454,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> approximatelyFindingSolution
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284055" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -397,29 +467,52 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Factorial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
+=======
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="762" column="0" lean-forward="false" selection-start-line="762" selection-start-column="0" selection-end-line="762" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> approximatelyFindingSolution
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Permutation.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="-989">
+          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+>>>>>>> approximatelyFindingSolution
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
@@ -438,49 +531,17 @@
             <element signature="imports" expanded="true" />
             <element signature="method#printSolution#0;class#SlidePuzzleSolver#0" expanded="false" />
             <marker date="1518203342165" expanded="false" signature="2208:2224" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+=======
+        <state relative-caret-position="512">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Factorial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Permutation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="131" column="22" lean-forward="false" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1518203342159" expanded="true" signature="2669:2671" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/TableState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="270" column="31" lean-forward="true" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
+        <state relative-caret-position="680">
+          <caret line="255" column="0" lean-forward="true" selection-start-line="255" selection-start-column="0" selection-end-line="255" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#TableState#0;class#TableState#0" expanded="false" />
@@ -494,19 +555,144 @@
             <element signature="method#print#0;class#TableState#0" expanded="false" />
             <element signature="method#setElement#0;class#TableState#0" expanded="false" />
             <element signature="method#getElement#0;class#TableState#0" expanded="false" />
-            <element signature="e#7193#7194#0" expanded="true" />
-            <element signature="e#7217#7218#0" expanded="true" />
-            <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/src/SlidePuzzleSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="111" column="0" lean-forward="false" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="32" column="27" lean-forward="false" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+>>>>>>> approximatelyFindingSolution
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Permutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="435">
+          <caret line="131" column="22" lean-forward="false" selection-start-line="131" selection-start-column="22" selection-end-line="131" selection-end-column="22" />
+=======
+        <state relative-caret-position="1449">
+          <caret line="69" column="35" lean-forward="false" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+>>>>>>> approximatelyFindingSolution
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="267">
+          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1518203342159" expanded="true" signature="2669:2671" ph="{...}" />
+          </folding>
+=======
+        <state relative-caret-position="1911">
+          <caret line="111" column="20" lean-forward="true" selection-start-line="111" selection-start-column="20" selection-end-line="111" selection-end-column="20" />
+          <folding />
+>>>>>>> approximatelyFindingSolution
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TableState.java">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="254">
+          <caret line="270" column="31" lean-forward="true" selection-start-line="270" selection-start-column="31" selection-end-line="270" selection-end-column="31" />
+=======
+        <state relative-caret-position="4725">
+          <caret line="225" column="7" lean-forward="true" selection-start-line="225" selection-start-column="7" selection-end-line="225" selection-end-column="7" />
+>>>>>>> approximatelyFindingSolution
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TableState#0;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#1;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#2;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#3;class#TableState#0" expanded="false" />
+            <element signature="method#isMovePossible#0;class#TableState#0" expanded="false" />
+            <element signature="method#makeMove#0;class#TableState#0" expanded="false" />
+            <element signature="method#getPossibleNextStates#0;class#TableState#0" expanded="false" />
+            <element signature="method#getStateAfterMove#0;class#TableState#0" expanded="false" />
+            <element signature="method#print#0;class#TableState#0" expanded="false" />
+            <element signature="method#setElement#0;class#TableState#0" expanded="false" />
+            <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+<<<<<<< HEAD
+            <element signature="e#7193#7194#0" expanded="true" />
+            <element signature="e#7217#7218#0" expanded="true" />
+            <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+=======
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="12" column="58" lean-forward="false" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factorial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SlidePuzzleSolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1512">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -533,10 +719,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1575">
           <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1518203342159" expanded="true" signature="2669:2671" ph="{...}" />
           </folding>
+=======
+          <folding />
+>>>>>>> approximatelyFindingSolution
         </state>
       </provider>
     </entry>
@@ -557,9 +747,13 @@
             <element signature="method#print#0;class#TableState#0" expanded="false" />
             <element signature="method#setElement#0;class#TableState#0" expanded="false" />
             <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#7193#7194#0" expanded="true" />
             <element signature="e#7217#7218#0" expanded="true" />
             <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+=======
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -586,8 +780,12 @@
           <caret line="89" column="12" lean-forward="false" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
             <element signature="method#printSolution#0;class#SlidePuzzleSolver#0" expanded="false" />
             <marker date="1518203342165" expanded="false" signature="2208:2224" ph="{...}" />
+=======
+            <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -614,10 +812,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
           <caret line="36" column="46" lean-forward="false" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1518203342159" expanded="true" signature="2669:2671" ph="{...}" />
           </folding>
+=======
+          <folding />
+>>>>>>> approximatelyFindingSolution
         </state>
       </provider>
     </entry>
@@ -627,8 +829,12 @@
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
             <element signature="method#printSolution#0;class#SlidePuzzleSolver#0" expanded="false" />
             <marker date="1518203342165" expanded="false" signature="2208:2224" ph="{...}" />
+=======
+            <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -666,9 +872,13 @@
             <element signature="method#print#0;class#TableState#0" expanded="false" />
             <element signature="method#setElement#0;class#TableState#0" expanded="false" />
             <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#7193#7194#0" expanded="true" />
             <element signature="e#7217#7218#0" expanded="true" />
             <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+=======
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -708,9 +918,13 @@
             <element signature="method#print#0;class#TableState#0" expanded="false" />
             <element signature="method#setElement#0;class#TableState#0" expanded="false" />
             <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#7193#7194#0" expanded="true" />
             <element signature="e#7217#7218#0" expanded="true" />
             <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+=======
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -737,8 +951,12 @@
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
             <element signature="method#printSolution#0;class#SlidePuzzleSolver#0" expanded="false" />
             <marker date="1518203342165" expanded="false" signature="2208:2224" ph="{...}" />
+=======
+            <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -778,9 +996,13 @@
             <element signature="method#print#0;class#TableState#0" expanded="false" />
             <element signature="method#setElement#0;class#TableState#0" expanded="false" />
             <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#7193#7194#0" expanded="true" />
             <element signature="e#7217#7218#0" expanded="true" />
             <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+=======
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -799,8 +1021,12 @@
           <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+<<<<<<< HEAD
             <element signature="method#printSolution#0;class#SlidePuzzleSolver#0" expanded="false" />
             <marker date="1518203342165" expanded="false" signature="2208:2224" ph="{...}" />
+=======
+            <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -832,9 +1058,13 @@
             <element signature="method#print#0;class#TableState#0" expanded="false" />
             <element signature="method#setElement#0;class#TableState#0" expanded="false" />
             <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+<<<<<<< HEAD
             <element signature="e#7193#7194#0" expanded="true" />
             <element signature="e#7217#7218#0" expanded="true" />
             <marker date="1518203342168" expanded="true" signature="6991:7002" ph="/**...*/" />
+=======
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
@@ -859,14 +1089,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1518203342159" expanded="true" signature="2669:2671" ph="{...}" />
           </folding>
+=======
+          <folding />
+>>>>>>> approximatelyFindingSolution
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Factorial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -875,8 +1117,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SlidePuzzleMove.java">
+    <entry file="file://$PROJECT_DIR$/src/Permutation.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="567">
           <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding />
@@ -895,39 +1138,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="762" column="0" lean-forward="false" selection-start-line="762" selection-start-column="0" selection-end-line="762" selection-end-column="0" />
+=======
+        <state relative-caret-position="-1084">
+          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+>>>>>>> approximatelyFindingSolution
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/TableState.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="71">
           <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="56" />
+=======
+        <state relative-caret-position="-134">
+          <caret line="266" column="49" lean-forward="false" selection-start-line="266" selection-start-column="49" selection-end-line="266" selection-end-column="49" />
+>>>>>>> approximatelyFindingSolution
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#TableState#0;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#1;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#2;class#TableState#0" expanded="false" />
+            <element signature="method#TableState#3;class#TableState#0" expanded="false" />
+            <element signature="method#isMovePossible#0;class#TableState#0" expanded="false" />
+            <element signature="method#makeMove#0;class#TableState#0" expanded="false" />
+            <element signature="method#getPossibleNextStates#0;class#TableState#0" expanded="false" />
+            <element signature="method#getStateAfterMove#0;class#TableState#0" expanded="false" />
+            <element signature="method#print#0;class#TableState#0" expanded="false" />
+            <element signature="method#setElement#0;class#TableState#0" expanded="false" />
+            <element signature="method#getElement#0;class#TableState#0" expanded="false" />
+            <marker date="1518269524476" expanded="true" signature="6991:7002" ph="/**...*/" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Permutation.java">
+    <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="-989">
           <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
+=======
+        <state relative-caret-position="1189">
+          <caret line="125" column="0" lean-forward="true" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+>>>>>>> approximatelyFindingSolution
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PermutationState.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="512">
           <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1518203342159" expanded="true" signature="2669:2671" ph="{...}" />
+=======
+        <state relative-caret-position="286">
+          <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="46" selection-end-line="113" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1518271111482" expanded="true" signature="2055:2061" ph="{...}" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/TableState.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
@@ -960,6 +1238,14 @@
             <element signature="imports" expanded="true" />
             <element signature="method#printSolution#0;class#SlidePuzzleSolver#0" expanded="false" />
             <marker date="1518203342165" expanded="false" signature="2208:2224" ph="{...}" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> approximatelyFindingSolution
           </folding>
         </state>
       </provider>
