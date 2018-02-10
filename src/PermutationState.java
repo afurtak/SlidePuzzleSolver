@@ -15,8 +15,6 @@ public class PermutationState {
     private int distanceFromRoot;
     private int rating;
 
-    private PermutationState prevState;
-
     /**
      * @param permutation is permutation
      * @param x is width of slide puzzle
@@ -121,13 +119,7 @@ public class PermutationState {
 
     public int getRating() {
         if (rating == -1)
-            rating = rateState() + getDistanceFromRoot() + 1;
+            rating = rateState() + getDistanceFromRoot();
         return rating;
     }
-
-    public void setPrevState(PermutationState prevState) {
-        this.prevState = prevState;
-    }
-
-    public PermutationState getPrevState() { return prevState; }
 }

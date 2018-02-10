@@ -262,16 +262,18 @@ public class TableState {
      */
     public boolean isSolvable() {
 
-        int numberInverion = new Permutation(table).getNumberInversion();
+        int numberInversion = new Permutation(table).getNumberInversion();
+
+        numberInversion -= zeroX + zeroY * width;
 
         if (width % 2 == 1) {
-            return numberInverion % 2 == 0;
+            return numberInversion % 2 == 0;
         }
         else {
             if (zeroY % 2 == 0)
-                return numberInverion % 2 == 0;
+                return numberInversion % 2 == 0;
             else
-                return numberInverion % 2 == 1;
+                return numberInversion % 2 == 1;
         }
 
     }
