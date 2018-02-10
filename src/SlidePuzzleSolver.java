@@ -1,10 +1,5 @@
-import javafx.scene.control.Tab;
 import javafx.util.Pair;
-
 import java.util.*;
-import java.util.AbstractQueue;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
 
 /**
  * Class services solutions for slide puzzle.
